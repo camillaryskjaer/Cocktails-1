@@ -13,7 +13,7 @@ namespace Cocktails
             using (var ctx = new BarTable())
             {
 
-                /*ctx.cocktails.Add(
+               /* ctx.cocktails.Add(
                     new Cocktail("White Russian", new List<Item>()
                     {
                         new Item(30, new Liquid("Fresh Cream", "White")),
@@ -28,7 +28,7 @@ namespace Cocktails
 
                 var test = from c in ctx.cocktails join o in ctx.items on c.Id equals o.Id join e in ctx.ingredients on o.Id equals e.Id select new { o.Unit, c.Name};
 
-                var res = ctx.cocktails.Where(o=> o.Name == "White Russian");
+                var res = ctx.cocktails.Where(o => o.Name == "White Russian");
                 var res2 = ctx.items;
                 var res3 = ctx.ingredients;
                 foreach (var item in test)

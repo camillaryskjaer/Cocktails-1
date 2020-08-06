@@ -12,14 +12,11 @@ namespace Cocktails
     using System;
     using System.Collections.Generic;
     
-    public partial class Item
+    public partial class C__MigrationHistory
     {
-        public int Id { get; set; }
-        public int Unit { get; set; }
-        public Nullable<int> Ingredient_Id { get; set; }
-        public Nullable<int> Cocktail_Id { get; set; }
-    
-        public virtual Cocktail Cocktail { get; set; }
-        public virtual Ingredient Ingredient { get; set; }
+        public string MigrationId { get; set; }
+        public string ContextKey { get; set; }
+        public byte[] Model { get; set; }
+        public string ProductVersion { get; set; }
     }
 }

@@ -9,7 +9,6 @@ namespace Cocktails
 {
     class BarTable : DbContext
     {
-
         public DbSet<Cocktail> cocktails { get; set; }
         public DbSet<Item> items { get; set; }
         public DbSet<Ingredient> ingredients { get; set; }
