@@ -26,8 +26,10 @@ namespace Cocktails
 
                 Console.ReadKey();*/
 
+                //Hvad sker der her?
                 var test = from c in ctx.cocktails join o in ctx.items on c.Id equals o.Id join e in ctx.ingredients on o.Id equals e.Id select new { o.Unit, c.Name};
 
+                //res1, res2, res3 er meget dårlig navngivning!
                 var res = ctx.cocktails.Where(o => o.Name == "White Russian");
                 var res2 = ctx.items;
                 var res3 = ctx.ingredients;
