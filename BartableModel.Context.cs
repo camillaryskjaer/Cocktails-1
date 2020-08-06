@@ -25,6 +25,7 @@ namespace Cocktails
             throw new UnintentionalCodeFirstException();
         }
     
+    //Forklar hvorfor du bruger disse og hvorfor de er virtuelle
         public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
         public virtual DbSet<Cocktail> Cocktails { get; set; }
         public virtual DbSet<Ingredient> Ingredients { get; set; }
